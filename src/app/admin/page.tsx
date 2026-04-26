@@ -56,16 +56,16 @@ export default async function AdminDashboard() {
                   ) : '-'}
                 </td>
                 <td className="px-6 py-4">
-                  <span className={\`px-3 py-1 rounded-full text-sm font-medium \${
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                     req.status === 'pending' ? 'bg-orange-100 text-orange-700' :
                     req.status === 'approved' ? 'bg-green-100 text-green-700' :
                     'bg-red-100 text-red-700'
-                  }\`}>
+                  }`}>
                     {req.status === 'pending' ? 'قيد المراجعة' : req.status === 'approved' ? 'مقبول' : 'مرفوض'}
                   </span>
                 </td>
                 <td className="px-6 py-4 flex gap-2">
-                  <Link href={\`/admin/request/\${req.id}\`} className="px-4 py-2 bg-slate-900 text-white rounded-lg text-sm hover:bg-slate-800 transition">
+                  <Link href={`/admin/request/${req.id}`} className="px-4 py-2 bg-slate-900 text-white rounded-lg text-sm hover:bg-slate-800 transition">
                     مراجعة وتعديل
                   </Link>
                 </td>

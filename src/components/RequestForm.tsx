@@ -107,7 +107,7 @@ export default function RequestForm() {
             />
             <UploadCloud className="w-10 h-10 text-emerald-500 mx-auto mb-3 group-hover:scale-110 transition-transform" />
             <p className="text-emerald-800 font-medium">ارفع صور المنتج أو اسحبها هنا</p>
-            <p className="text-sm text-emerald-600 mt-1">{files.length > 0 ? \`تم اختيار \${files.length} صور\` : '(اختياري إذا أدخلت رابط)'}</p>
+            <p className="text-sm text-emerald-600 mt-1">{files.length > 0 ? `تم اختيار ${files.length} صور` : '(اختياري إذا أدخلت رابط)'}</p>
           </div>
 
           <button 
